@@ -230,20 +230,5 @@ if __name__ == "__main__":
 		elif "will you marry me" in query:
 			speak("I'm not sure about, may be you should give me some time")
 
-		else:
-			pmpt = query
-			if 'exit' in pmpt or 'quit' in pmpt:
-				quit()
-			completion = openai.Completion.create(
-				model = "text-davinci-003",
-				prompt = pmpt,
-				temperature=0.7,
-				max_tokens=256,
-				top_p=1,
-				frequency_penalty=0,
-				presence_penalty=0
-				)
-			response = completion.choices[0].text
-			print(response)
-			speak(response)
+		
 
