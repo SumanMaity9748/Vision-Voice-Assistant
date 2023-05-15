@@ -192,12 +192,9 @@ if __name__ == "__main__":
 
 
 		elif 'offline' in query:
-			speak("Thanks for giving me your time")
+			speak("Thank You! Anything for you.")
 			quit()
 		
-		elif 'i love you' in query:
-			speak("I love you too")
-			speak("I will be always yours")
 
 		elif 'how are you' in query:
 			speak("I am fine, Thank you")
@@ -223,12 +220,6 @@ if __name__ == "__main__":
 
 		elif "who are you" in query:
 			speak("I am your virtual assistant created by Suman")
-
-		elif 'reason for you' in query:
-			speak("I was created as a partner of Suman")
-		
-		elif "will you marry me" in query:
-			speak("I'm not sure about, may be you should give me some time")
 
 		
 
